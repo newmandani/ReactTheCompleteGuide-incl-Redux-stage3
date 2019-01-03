@@ -14,7 +14,8 @@
 ### Installation
 
 This solution use [Node.js](https://nodejs.org/) v6+ to run as standalone app.
-Also App is written with [React](https://reactjs.org) & ReactDOM components you also have if you can start create-react-app or reed about oninstallation section of this document.
+Also App is written with [React](https://reactjs.org), so React & ReactDOM components you already have if you can start create-react-app or read about it at installation section of this doc.
+
 Install the dependencies and start the server.
 
 ```sh
