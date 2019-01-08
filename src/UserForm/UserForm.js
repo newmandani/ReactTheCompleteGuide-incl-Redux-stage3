@@ -9,22 +9,24 @@ class UserForm extends Component {
         input: 'Test'
     }
 
-    inputChangedHandler = (event) => {
+    inputChangedHandler = ({target: { value }}) => {
         this.setState({
-            input: event.target.value,
+            input: value
         })
     }
 
     render(){
+        const {state: {input }, inputChangedHandler} = this;
+
         return (
             <div className="UserForm">
                 <UserInput
-                    input={this.state.input}
-                    change={this.inputChangedHandler}
+                    input={input}
+                    change={inputChangedHandler}
                 />
 
-                <UserOutput val={this.state.input} />
-                <UserOutput val={this.state.input} />
+                <UserOutput val={input} />
+                <UserOutput val={input} />
                 <UserOutput val="test" />
             </div>
         );
